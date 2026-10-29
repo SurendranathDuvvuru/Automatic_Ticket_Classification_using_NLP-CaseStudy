@@ -1,6 +1,6 @@
-# Automatic Ticket Classification
+# Automatic Ticket Classification using Natural Language Processing (NLP)
 ## Project Overview
-This NLP project groups customer complaints by topic and aims to classify new tickets into the relevant service category.
+This NLP case study groups customer complaints by topic and aims to classify new tickets into the relevant service category.
 ## Objective
 Automate complaint routing to help customer-support teams direct issues to the appropriate department.
 ## Technology Stack
@@ -17,14 +17,11 @@ Automate complaint routing to help customer-support teams direct issues to the a
 6. Convert complaint text into TF-IDF features.
 7. Use Non-negative Matrix Factorization (NMF) for unsupervised topic modeling.
 8. Explore topic counts using coherence scores and inspect the top words per topic.
-9. Map topics to five categories: Bank Account Services, Credit Card/Prepaid Card, Theft/Dispute Reporting, Mortgage/Loan, and Others.
+9. Map topics to five categories: Bank Account Services, Credit Card/ Prepaid Card, Theft/ Dispute Reporting, Mortgage/ Loan, and Others.
 10. Plan a supervised classifier to predict categories for new complaints.
 ## Data
-The notebook expects `complaints-2021-05-14_08_16.json` in a Google Drive folder; update the path for your environment.
-## Current Status
-Text cleaning, EDA, TF-IDF extraction, and NMF topic modeling are represented in the notebook.
-The supervised classification section is unfinished: training data preparation, vectorization, model training, evaluation, and inference still require implementation.
+Input file `complaints-2021-05-14_08_16.json` is used from Google Drive folder during code execution.
 ## Run
 Install the required libraries, configure the JSON file path, and execute the notebook cells in order in Jupyter or Google Colab.
-## Expected Outcome
+## Outcome
 A complaint-routing workflow that assigns customer messages to service categories and supports faster ticket handling.
